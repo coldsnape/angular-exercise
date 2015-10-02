@@ -72,6 +72,8 @@ app.controller('PostsCtrl', [
     });
     $scope.body = '';
   };
-}
+  $scope.incrementUpvotes = function(post) {
+  post.upvotes += 1;
+  };
   
-]);
+}]);
